@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tryout TKA Bahasa Inggris Tingkat Lanjut</title>
+<style>
+:root{--bg:#f3f6f4;--sf:#fff;--tx:#17231f;--mu:#5d6b66;--bd:#d5ded9;--pr:#0f766e;--pt:#e0f2ef;--wn:#b45309;--wt:#fef3c7;--ok:#15803d;--okt:#dcfce7;--er:#b91c1c;--ert:#fee2e2}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1715;--sf:#18231f;--tx:#e8f0ec;--mu:#9aaba4;--bd:#2c3b36;--pr:#2dd4bf;--pt:#12332e;--wn:#fbbf24;--wt:#3a2d0b;--ok:#4ade80;--okt:#123222;--er:#f87171;--ert:#3b1618}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+button{font:inherit;cursor:pointer}
+button:focus-visible{outline:3px solid var(--pr);outline-offset:2px}
+.top{position:sticky;top:0;z-index:5;background:var(--sf);border-bottom:1px solid var(--bd);display:flex;justify-content:space-between;align-items:center;padding:10px 16px;gap:10px}
+.top b{font-size:15px}
+.tm{font-variant-numeric:tabular-nums;font-weight:700;background:var(--pt);color:var(--pr);padding:4px 12px;border-radius:99px}
+.tm.low{background:var(--ert);color:var(--er)}
+.wrap{max-width:1100px;margin:0 auto;padding:16px;display:grid;grid-template-columns:1fr 300px;gap:16px}
+.box{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:18px}
+.main{display:grid;gap:16px;align-content:start}
+.ps{font-family:Georgia,"Times New Roman",serif;line-height:1.75}
+.ps h3{margin:0 0 4px;font-family:system-ui,sans-serif;font-size:15px}
+.ps small{display:block;color:var(--mu);font-family:system-ui,sans-serif;margin-bottom:10px}
+.ps p{margin:0 0 10px}
+.ps .lb{font-weight:700;font-family:system-ui,sans-serif}
+.qn{color:var(--mu);font-size:14px;margin-bottom:6px}
+.qt{font-weight:600;margin-bottom:12px}
+.op{display:flex;gap:10px;width:100%;text-align:left;background:var(--sf);color:var(--tx);border:1.5px solid var(--bd);border-radius:10px;padding:10px 12px;margin-bottom:8px}
+.op i{font-style:normal;font-weight:700;min-width:22px;height:22px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-size:13px}
+.op.sel{border-color:var(--pr);background:var(--pt)}.op.sel i{background:var(--pr);color:var(--sf)}
+.op.ok{border-color:var(--ok);background:var(--okt)}.op.bad{border-color:var(--er);background:var(--ert)}
+.ctl{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap}
+.btn{border:1.5px solid var(--pr);background:var(--sf);color:var(--pr);border-radius:10px;padding:9px 16px;font-weight:600}
+.btn.p{background:var(--pr);color:var(--sf)}
+.btn:disabled{opacity:.4;cursor:default}
+.dbt{border-color:var(--wn);color:var(--wn)}.dbt.on{background:var(--wn);color:var(--sf)}
+.nav h4{margin:0 0 10px;font-size:14px}
+.gr{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.gr button{aspect-ratio:1;border:1.5px solid var(--bd);border-radius:8px;background:var(--sf);color:var(--tx);font-weight:600;padding:0}
+.gr .an{background:var(--pr);border-color:var(--pr);color:var(--sf)}
+.gr .dt{background:var(--wn);border-color:var(--wn);color:var(--sf)}
+.gr .ck{background:var(--ok);border-color:var(--ok);color:var(--sf)}
+.gr .xx{background:var(--er);border-color:var(--er);color:var(--sf)}
+.gr .cu{outline:3px solid var(--tx);outline-offset:1px}
+.lg{font-size:12px;color:var(--mu);margin-top:12px;display:grid;gap:4px}
+.lg span:before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c);border:1px solid var(--bd)}
+.ex{margin-top:14px;padding:12px 14px;border-radius:10px;background:var(--pt);border-left:4px solid var(--pr)}
+.ex b{display:block;margin-bottom:2px}
+.ctr{max-width:620px;margin:8vh auto;padding:16px}
+.ctr h1{font-size:28px;line-height:1.2;margin:0 0 8px}
+.ctr ul{padding-left:20px;color:var(--mu)}
+.sc{font-size:64px;font-weight:800;color:var(--pr);line-height:1}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0;text-align:center}
+.st div{background:var(--bg);border-radius:10px;padding:10px 4px;font-size:13px;color:var(--mu)}
+.st b{display:block;font-size:22px;color:var(--tx)}
+.mo{position:fixed;inset:0;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:16px;z-index:9}
+.mo .box{max-width:400px}
+@media(max-width:820px){.wrap{grid-template-columns:1fr;padding:12px}.nav{order:3}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const P=[
+{t:"Coral Reefs in Danger",h:"Coral reefs cover less than one percent of the ocean floor, yet they support about a quarter of all marine species. In recent decades, however, rising sea temperatures have caused widespread coral bleaching, a process in which stressed corals expel the algae living in their tissues. Without these algae, corals lose both their color and their main food source.|Scientists warn that if warming continues, most reefs could disappear by 2100. Fishing communities would suffer most, as reefs provide food and protect coastlines from storms. Some researchers are therefore breeding heat-resistant corals, although they admit this is only a partial solution unless carbon emissions fall."},
+{t:"Working from Home",h:"Remote work was once a rare privilege, but it has become common in many industries. Supporters argue that it saves commuting time and lets employees balance work and family life. Companies also benefit because they can hire talent from anywhere and spend less on office space.|Critics, however, point out that working from home can blur the boundary between work and rest. Some employees feel isolated and miss spontaneous conversations that spark new ideas. Consequently, many firms now adopt a hybrid model, in which staff work from the office a few days a week."},
+{t:"Reading Formats",h:"<span class=lb>Passage A</span><br>Digital reading is the future. E-readers store thousands of titles in one light device, and readers can adjust the font size, which helps people with poor eyesight. Moreover, e-books are cheaper and instantly available, so students in remote areas can access literature that bookstores never stock.|<span class=lb>Passage B</span><br>Printed books still have a strong place. Studies suggest that readers retain more detail from paper pages, perhaps because they can sense where a passage sits within the book. Paper also causes less eye strain than glowing screens, and a book never runs out of battery. For these reasons, many students still prefer to study from printed texts."},
+{t:"Why People Volunteer",s:"Choose the option that best completes each blank.",h:"Volunteering is often seen as a gift to others, but it also (16) ... the volunteers themselves. Research shows that people who help regularly report lower stress and a stronger sense of purpose. (17) ..., volunteering allows young people to build skills such as teamwork that classrooms cannot always teach. (18) ..., many schools now include community service in their programs."},
+{t:"Farming in the City",h:"Urban farming, the practice of growing food within city limits, is gaining popularity worldwide. Rooftop gardens, vertical farms and community plots turn unused spaces into sources of fresh vegetables. Because food is produced near consumers, transport costs and emissions decline significantly.|Nevertheless, urban farming faces obstacles. Land in cities is expensive, and contaminated soil can make crops unsafe to eat. Vertical farms also consume large amounts of electricity for artificial lighting, which may cancel out their environmental benefits unless the power comes from renewable sources.|Despite these challenges, city governments increasingly support the movement through tax incentives and training programs. Its supporters believe that, with careful planning, urban farming can make cities more self-reliant."},
+{t:"Should School Start Later?",h:"Teenagers' body clocks shift during puberty, making them naturally sleepy later at night and reluctant to wake early. Yet most schools begin classes before 8 a.m., forcing students to function on far less sleep than the eight to ten hours experts recommend.|A study of schools that delayed their start time by one hour found that attendance improved and car accidents among teen drivers dropped. Teachers also reported that students were more attentive in the morning. Opponents, however, argue that later starts disrupt bus schedules, sports practices and parents' work routines.|Still, the evidence suggests these inconveniences are manageable. As one researcher put it, a school's schedule should serve the students' health, not the other way around."},
+{t:"Batik, a Living Heritage",h:"In 2009, UNESCO recognized Indonesian batik as a Masterpiece of the Oral and Intangible Heritage of Humanity. Batik is not merely a fabric; it is a wax-resist dyeing technique in which patterns are drawn with hot wax before the cloth is dyed. Each region has its own motifs, and many carry philosophical meanings. For instance, the parang motif of Central Java symbolizes perseverance.|Today batik faces a dilemma. Machine-printed imitations are cheap and fast to produce, yet they threaten the livelihood of artisans who spend weeks on a single hand-drawn cloth. To protect the tradition, some communities teach batik at schools, hoping young people will regard it as living heritage rather than a souvenir."}
+];
+// [passage, question, options, answer index, explanation]
+const Q=[
+[0,"What is the topic of the passage?",["Fishing communities near reefs","Threats of warming to coral reefs","The color of marine algae","Methods of breeding corals","The size of the world's oceans"],1,"Seluruh paragraf membahas pemutihan karang akibat naiknya suhu laut dan dampaknya."],
+[0,"The word “stressed” (paragraph 1) is closest in meaning to ....",["Highlighted","Overworked","Under harmful pressure","Fully grown","Removed"],2,"“Stressed corals” berarti karang yang tertekan oleh kondisi buruk, yaitu suhu laut yang naik."],
+[0,"The passage mentions all of the following, EXCEPT ....",["reefs protect coastlines from storms","bleaching makes corals lose their color","some scientists breed heat-resistant corals","reefs attract millions of tourists every year","most reefs may vanish by 2100"],3,"Pariwisata tidak disebutkan dalam teks. Pilihan lain disebutkan di paragraf 1 dan 2."],
+[0,"What is the writer's attitude toward coral bleaching?",["Indifferent","Amused","Concerned","Hostile","Optimistic"],2,"Kata seperti warn, suffer, dan only a partial solution menunjukkan penulis prihatin (concerned)."],
+[0,"It can be inferred that heat-resistant corals ....",["will completely solve the problem","are already common in all oceans","matter less than fishing","help only if carbon emissions also decrease","are harmful to algae"],3,"Kalimat terakhir: breeding coral hanyalah solusi parsial kecuali emisi karbon turun."],
+[1,"The purpose of the passage is to ....",["persuade readers to work from home","present both sides of remote work and a compromise","criticize companies that reject hybrid work","explain how to reduce office costs","describe a remote employee's routine"],1,"Teks memaparkan keuntungan, kritik, lalu model hybrid sebagai jalan tengah."],
+[1,"The word “blur” (paragraph 2) is closest in meaning to ....",["clarify","erase","make unclear","strengthen","measure"],2,"To blur the boundary = membuat batas menjadi tidak jelas."],
+[1,"The word “they” in “because they can hire talent” refers to ....",["Supporters","Employees","Companies","Critics","Researchers"],2,"Subjek kalimat sebelumnya adalah Companies yang dapat merekrut talenta dari mana saja."],
+[1,"How does the writer organize the ideas?",["Cause, then effect","Chronological events","Advantages, disadvantages, then a compromise","Definition followed by examples","Comparison of two companies"],2,"Paragraf 1 keuntungan, paragraf 2 kritik, diakhiri solusi hybrid."],
+[1,"The paragraph following the passage most likely discusses ....",["the history of office buildings","how companies arrange hybrid schedules","why commuting is expensive","how employees can resign","the first remote worker"],1,"Kalimat terakhir memperkenalkan hybrid model, sehingga paragraf berikutnya wajar menjelaskan penerapannya."],
+[2,"The common theme of both passages is ....",["the history of publishing","a comparison of digital and printed reading","ways to reduce school costs","the dangers of screen time only","reading habits of villagers"],1,"Passage A membela bacaan digital, Passage B membela buku cetak."],
+[2,"Which statement is mentioned in Passage A?",["Paper books never need charging.","Readers can adjust font size on e-readers.","Printed books help readers retain details.","Screens cause eye strain.","Students prefer paper."],1,"Passage A menyebut readers can adjust the font size. Pilihan lain berasal dari Passage B."],
+[2,"The idea in Passage B that differs from Passage A is that ....",["e-books are cheaper","technology changes how people read","paper offers better comprehension and comfort","students need many titles","remote areas lack bookstores"],2,"Passage B menekankan daya ingat dan kenyamanan mata pada kertas, sedangkan A menekankan kemudahan akses."],
+[2,"The best summary of both passages is ....",["Printed books will soon disappear.","Digital reading harms students.","Both formats cost the same.","Each format has strengths: A stresses convenience, B stresses retention and comfort.","Students should avoid reading."],3,"Kedua teks sama-sama memuji format masing-masing dengan alasan berbeda."],
+[2,"According to Passage A, a student in a remote village with no bookstore would ....",["benefit from e-books","need printed books only","avoid reading","buy cheaper paper","suffer eye strain"],0,"Passage A: e-books membuat siswa di daerah terpencil dapat mengakses literatur."],
+[3,"The best option to complete blank (16) is ....",["harms","ignores","delays","benefits","replaces"],3,"Kalimat berikutnya menyebut stres menurun dan tujuan hidup meningkat, jadi volunteering benefits relawan."],
+[3,"The best option to complete blank (17) is ....",["However","Otherwise","Instead","Therefore","Furthermore"],4,"Kalimat ini menambah manfaat lain, sehingga konektor yang tepat adalah Furthermore."],
+[3,"The best option to complete blank (18) is ....",["Despite these benefits","Because of these benefits","Unless these benefits","Although these benefits","Before these benefits"],1,"Manfaat volunteering menjadi alasan sekolah memasukkan community service (hubungan sebab-akibat)."],
+[4,"Paragraph 2 is related to paragraph 1 in that paragraph 2 ....",["gives examples of paragraph 1","presents obstacles to the idea in paragraph 1","repeats the points of paragraph 1","defines urban farming","summarizes the whole text"],1,"Kata Nevertheless membuka paragraf 2 yang berisi hambatan atas manfaat di paragraf 1."],
+[4,"The word “Its” (paragraph 3) refers to ....",["city governments","urban farming","careful planning","training programs","tax incentives"],1,"Its supporters = pendukung gerakan urban farming (the movement)."],
+[4,"The passage mentions all of the following, EXCEPT ....",["Rooftop gardens use spare space.","Local production cuts transport emissions.","Contaminated soil may make crops unsafe.","Governments offer tax incentives.","Urban farmers earn more than rural farmers."],4,"Perbandingan penghasilan petani kota dan desa tidak disebutkan."],
+[4,"It can be inferred that vertical farms ....",["are always eco-friendly","may not benefit the environment if powered by non-renewable energy","will replace rural farming","are opposed by governments","cannot grow vegetables"],1,"Listrik besar dapat membatalkan manfaat lingkungan kecuali berasal dari energi terbarukan."],
+[4,"The purpose of the text is to ....",["promote a single farming product","discuss the potential and challenges of urban farming","instruct readers to build rooftop gardens","compare two cities","criticize governments"],1,"Teks memaparkan manfaat, hambatan, dan dukungan terhadap urban farming."],
+[5,"What is the topic of the text?",["Teenagers' sports","The case for later school start times","Causes of car accidents","Parents' work routines","Bus schedules"],1,"Seluruh teks membahas mengapa jam masuk sekolah sebaiknya diundur."],
+[5,"The writer's purpose is to ....",["entertain readers","persuade readers that schools should start later","describe puberty","report a crime","advertise a sleep product"],1,"Penulis menyajikan bukti dan menutup dengan pernyataan yang mendukung jam masuk lebih siang."],
+[5,"The word “disrupt” (paragraph 2) is closest in meaning to ....",["interrupt","improve","predict","cancel","strengthen"],0,"Disrupt = mengganggu atau mengacaukan jalannya sesuatu, sama dengan interrupt."],
+[5,"According to the study, delaying the start time by one hour ....",["increased sports practices","reduced attendance","improved attendance and lowered teen car accidents","made teachers more tired","changed bus schedules permanently"],2,"Paragraf 2: attendance improved and car accidents dropped."],
+[5,"The phrase “these inconveniences” (paragraph 3) refers to ....",["sleepiness in teenagers","disruptions to bus schedules, sports and parents' routines","car accidents","puberty","early classes"],1,"Inconveniences merujuk pada keberatan pihak penentang di akhir paragraf 2."],
+[5,"The researcher's statement implies that ....",["students should adapt to the schedule","schedules should be adjusted to students' health needs","health is less important than tradition","schools should have no schedules","parents should decide the lessons"],1,"Jadwal harus melayani kesehatan siswa, bukan sebaliknya."],
+[6,"What is the main idea of the text?",["Machine printing is the best method.","Batik is a heritage whose preservation faces challenges.","Central Java has the oldest history.","UNESCO regulates batik prices.","Teaching batik at school is useless."],1,"Paragraf 1 menjelaskan batik sebagai warisan, paragraf 2 menjelaskan tantangan pelestariannya."],
+[6,"The sentence “Batik is not merely a fabric” implies that batik ....",["is a worthless cloth","involves a technique and cultural knowledge","cannot be dyed","depends only on wax","has no relation to fabric"],1,"Kalimat berikutnya menjelaskan batik adalah teknik pewarnaan wax-resist, bukan sekadar kain."],
+[6,"The “dilemma” in paragraph 2 is between ....",["UNESCO recognition and tourism","dye prices and wax shortages","cheap printed imitations and the livelihood of hand-drawing artisans","school lessons and homework","Central Java and other regions"],2,"Tiruan cetak murah mengancam nafkah pembatik tangan."],
+[6,"Which statement is true according to the text?",["Parang symbolizes wealth.","UNESCO recognized batik in 2019.","Each region has its own motifs, many with philosophical meanings.","Machine-printed batik takes weeks to make.","Batik is taught only abroad."],2,"Disebutkan di paragraf 1: each region has its own motifs, many carry philosophical meanings."],
+[6,"“...regard it as living heritage rather than a souvenir” implies that young people should ....",["sell batik to tourists","avoid learning batik","buy machine-printed cloth","see batik as a tradition to practice and continue","collect batik as decoration"],3,"Living heritage = tradisi yang terus hidup dan dilestarikan, bukan sekadar oleh-oleh."],
+[6,"The writer's attitude toward batik is ....",["dismissive","appreciative yet concerned","entertained","indifferent","resentful"],1,"Penulis menghargai batik namun prihatin pada ancaman imitasi."]
+];
+const N=Q.length,TOT=3600,$=id=>document.getElementById(id);
+let S={scr:"start",cur:0,a:Array(N).fill(-1),d:Array(N).fill(false),t:TOT,modal:false},tm=null;
+const L="ABCDE";
+function start(){S={scr:"quiz",cur:0,a:Array(N).fill(-1),d:Array(N).fill(false),t:TOT,modal:false};clearInterval(tm);tm=setInterval(()=>{S.t--;const e=$("tm");if(e){e.textContent=fmt(S.t);e.className="tm"+(S.t<300?" low":"")}if(S.t<=0)done()},1000);render()}
+function fmt(s){s=Math.max(0,s);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+function pick(i){if(S.scr!=="quiz")return;S.a[S.cur]=i;render(true)}
+function go(n){if(n<0||n>=N)return;S.cur=n;render()}
+function dbt(){S.d[S.cur]=!S.d[S.cur];render(true)}
+function ask(){S.modal=true;render(true)}
+function close(){S.modal=false;render(true)}
+function done(){clearInterval(tm);S.modal=false;S.scr="result";render()}
+function review(n){S.scr="review";S.cur=n||0;render()}
+function score(){return Q.filter((q,i)=>S.a[i]===q[3]).length}
+function render(keep){
+const A=$("app"),y=scrollY;
+if(S.scr==="start"){A.innerHTML=`<div class=ctr><div class=box><h1>Tryout TKA Bahasa Inggris Tingkat Lanjut</h1><p>35 soal reading comprehension dengan 7 bacaan baru, sesuai pola soal TKA.</p><ul><li>Waktu pengerjaan 60 menit.</li><li>Tandai soal yang masih ragu dengan tombol Ragu-ragu.</li><li>Kamu bisa kembali ke soal sebelumnya kapan saja.</li><li>Setelah selesai, buka pembahasan lengkap setiap soal.</li></ul><button class="btn p" onclick="start()">Mulai tryout</button></div></div>`;return}
+if(S.scr==="result"){const s=score(),n=S.a.filter(x=>x<0).length,pc=Math.round(s/N*100);
+const m=pc>=80?"Luar biasa! Selamat telah menyelesaikan soal ini, proud of you! 🎉":pc>=60?"Selamat telah menyelesaikan soal ini, proud of you! Hasilmu bagus, tinggal sedikit lagi menuju puncak. 🌟":"Selamat telah menyelesaikan soal ini, proud of you! Setiap latihan membuatmu lebih kuat, pelajari pembahasan lalu coba lagi. 💪";
+A.innerHTML=`<div class=ctr><div class=box style="text-align:center"><p style="margin:0;color:var(--mu)">Nilai kamu</p><div class=sc>${pc}</div><p style="font-size:18px;font-weight:600">${m}</p><div class=st><div><b>${s}</b>Benar</div><div><b>${N-s-n}</b>Salah</div><div><b>${n}</b>Kosong</div><div><b>${fmt(TOT-S.t)}</b>Waktu</div></div><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><button class="btn p" onclick="review(0)">Lihat pembahasan</button><button class=btn onclick="start()">Ulangi tryout</button></div></div></div>`;scrollTo(0,0);return}
+const rv=S.scr==="review",q=Q[S.cur],pi=q[0],p=P[pi],ids=Q.map((x,i)=>x[0]===pi?i+1:0).filter(Boolean),ps=p.h.split("|").map(x=>`<p>${x}</p>`).join("");
+const ops=q[2].map((o,i)=>{let c="op";if(rv){if(i===q[3])c+=" ok";else if(i===S.a[S.cur])c+=" bad"}else if(S.a[S.cur]===i)c+=" sel";return `<button class="${c}" onclick="pick(${i})"${rv?" disabled":""}><i>${L[i]}</i><span>${o}</span></button>`}).join("");
+const u=S.a[S.cur],ex=rv?`<div class=ex><b>${u<0?"Kamu tidak menjawab":u===q[3]?"Jawaban kamu benar ✓":"Jawaban kamu salah ✗"}. Jawaban: ${L[q[3]]}</b>${q[4]}</div>`:"";
+const gr=Q.map((x,i)=>{let c=i===S.cur?"cu ":"";if(rv)c+=S.a[i]<0?"":S.a[i]===x[3]?"ck":"xx";else c+=S.d[i]?"dt":S.a[i]>=0?"an":"";return `<button class="${c}" onclick="go(${i})" aria-label="Soal ${i+1}">${i+1}</button>`}).join("");
+const ans=S.a.filter(x=>x>=0).length;
+A.innerHTML=`<div class=top><b>${rv?"Pembahasan":"Tryout TKA Bahasa Inggris"}</b>${rv?`<button class=btn onclick="S.scr='result';render()">Kembali ke nilai</button>`:`<span class=tm id=tm>${fmt(S.t)}</span>`}</div>
+<div class=wrap><div class=main>
+<div class="box ps"><h3>${p.t}</h3><small>${p.s||`Questions ${ids[0]}–${ids[ids.length-1]} are based on the following text.`}</small>${ps}</div>
+<div class=box><div class=qn>Soal ${S.cur+1} dari ${N}${!rv&&S.d[S.cur]?" · ditandai ragu-ragu":""}</div><div class=qt>${q[1]}</div>${ops}${ex}
+<div class=ctl><button class=btn onclick="go(S.cur-1)"${S.cur?"":" disabled"}>Sebelumnya</button>${rv?"":`<button class="btn dbt${S.d[S.cur]?" on":""}" onclick="dbt()">Ragu-ragu</button>`}${S.cur<N-1?`<button class="btn p" onclick="go(S.cur+1)">Selanjutnya</button>`:rv?`<button class="btn p" onclick="S.scr='result';render()">Selesai</button>`:`<button class="btn p" onclick="ask()">Selesai</button>`}</div></div></div>
+<aside class="box nav"><h4>${rv?"Navigasi pembahasan":`Navigasi soal (${ans}/${N} terjawab)`}</h4><div class=gr>${gr}</div><div class=lg>${rv?`<span style="--c:var(--ok)">Benar</span><span style="--c:var(--er)">Salah</span><span style="--c:var(--sf)">Kosong</span>`:`<span style="--c:var(--pr)">Sudah dijawab</span><span style="--c:var(--wn)">Ragu-ragu</span><span style="--c:var(--sf)">Belum dijawab</span>`}</div>${rv?"":`<button class="btn p" style="width:100%;margin-top:14px" onclick="ask()">Selesaikan tryout</button>`}</aside></div>
+${S.modal?`<div class=mo><div class=box><h3 style="margin-top:0">Selesaikan tryout?</h3><p>Belum dijawab: <b>${N-ans}</b> soal. Ragu-ragu: <b>${S.d.filter(Boolean).length}</b> soal.</p><div class=ctl><button class=btn onclick="close()">Kembali mengerjakan</button><button class="btn p" onclick="done()">Ya, selesai</button></div></div></div>`:""}`;
+if(keep)scrollTo(0,y);else scrollTo(0,0)}
+render();
+</script>
+</body>
+</html>
